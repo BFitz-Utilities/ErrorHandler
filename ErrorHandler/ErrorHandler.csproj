@@ -1,16 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <OutputType>Library</OutputType>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Title>Error Handler</Title>
     <Authors>BFitzHouse</Authors>
     <Description>A handler for managing errors</Description>
-    <RepositoryUrl>https://github.com/BFitzHouse/Utilities</RepositoryUrl>
     <PackageTags>Error Handler Utility</PackageTags>
-    <PackageReleaseNotes>Fix Versioning</PackageReleaseNotes>
-	<Version>1.0.1</Version>
+    <RepositoryUrl>https://github.com/BFitz-Utilities/ErrorHandler.git</RepositoryUrl>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
 </Project>
