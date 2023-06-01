@@ -70,5 +70,18 @@ namespace Fitz.Utilities
         {
             Warnings.Clear();
         }
+
+        public static IErrorHandler operator +(ErrorHandler Handler1, IErrorHandler Handler2)
+        {
+            // Add all errors
+            foreach (var error in Handler2.Errors)
+                Handler1.Errors.Add(error);
+
+            // Add all warnings
+            foreach (var warning in Handler2.Warnings)
+                Handler1.Warnings.Add(warning);
+
+            return Handler1;
+        }
     }
 }
