@@ -4,17 +4,12 @@ namespace Fitz.Utilities
 {
     public class ErrorHandler : IErrorHandler
     {
-
-        private readonly LogHandler _log;
-
         public List<Error> Errors { get; }
 
         public List<Error> Warnings { get; }
 
         public ErrorHandler()
         {
-            _log = new LogHandler("ErrorHandler");
-
             Errors = new List<Error>();
 
             Warnings = new List<Error>();
@@ -27,7 +22,6 @@ namespace Fitz.Utilities
             Error error = new Error(Id, Message, stackTrace);
 
             Errors.Add(error);
-            _log.Error(error.ToString());
         }
 
         public void AddWarning(string Id, string Message)
@@ -37,7 +31,6 @@ namespace Fitz.Utilities
             Error error = new Error(Id, Message, stackTrace);
 
             Warnings.Add(error);
-            _log.Warn(error.ToString());
         }
 
         public bool HasErrors()
