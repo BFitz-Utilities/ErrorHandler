@@ -8,6 +8,13 @@ namespace Fitz.Utilities
 {
     public interface IErrorHandler
     {
+        #region Properties
+
+        List<Error> Errors { get; }
+
+        List<Error> Warnings { get; }
+
+        #endregion Properties
 
         public void AddError(string Id, string Message);
 
