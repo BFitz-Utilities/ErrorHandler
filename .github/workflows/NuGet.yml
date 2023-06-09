@@ -25,6 +25,6 @@ jobs:
     - name: Pack
       run: dotnet pack --configuration Release /p:Version=${VERSION} --no-build --output .
     - name: Push
-      run: dotnet nuget push ErrorHandler.${VERSION}.nupkg --source https://nuget.pkg.github.com/BFitz-Utilities/index.json --api-key ${GITHUB_TOKEN}
+      run: dotnet nuget push *.${VERSION}.nupkg --source https://api.nuget.org/v3/index.json --api-key ${NUGET_TOKEN}
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NUGET_TOKEN: ${{ secrets.WRITE_PACKAGE_TO_NUGET_ORG_TOKEN }}
