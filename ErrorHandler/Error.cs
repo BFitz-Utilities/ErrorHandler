@@ -4,7 +4,6 @@ namespace Fitz.Utilities
 {
     public class Error : IError
     {
-
         public string Id { get; set; }
 
         public string Message { get; set; }
