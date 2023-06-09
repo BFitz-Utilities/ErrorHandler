@@ -4,15 +4,15 @@ namespace Fitz.Utilities
 {
     public class ErrorHandler : IErrorHandler
     {
-        public List<Error> Errors { get; }
+        public List<IError> Errors { get; }
 
-        public List<Error> Warnings { get; }
+        public List<IError> Warnings { get; }
 
         public ErrorHandler()
         {
-            Errors = new List<Error>();
+            Errors = new List<IError>();
 
-            Warnings = new List<Error>();
+            Warnings = new List<IError>();
         }
 
         public void AddError(string Id, string Message)

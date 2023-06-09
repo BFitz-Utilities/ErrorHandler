@@ -10,9 +10,9 @@ namespace Fitz.Utilities
     {
         #region Properties
 
-        List<Error> Errors { get; }
+        List<IError> Errors { get; }
 
-        List<Error> Warnings { get; }
+        List<IError> Warnings { get; }
 
         #endregion Properties
 
