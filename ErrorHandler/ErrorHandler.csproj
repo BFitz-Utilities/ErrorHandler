@@ -12,6 +12,7 @@
     <RepositoryUrl>https://github.com/BFitz-Utilities/ErrorHandler.git</RepositoryUrl>
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <RootNamespace>Fitz.Utilities</RootNamespace>
   </PropertyGroup>
 
 </Project>
