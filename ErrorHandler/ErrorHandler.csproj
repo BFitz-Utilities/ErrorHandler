@@ -13,6 +13,7 @@
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <RootNamespace>Fitz.Utilities</RootNamespace>
+    <AssemblyName>Fitz.Utilities.ErrorHandler</AssemblyName>
   </PropertyGroup>
 
 </Project>
