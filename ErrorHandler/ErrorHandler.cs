@@ -15,22 +15,26 @@ namespace Fitz.Utilities
             Warnings = new List<IError>();
         }
 
-        public void AddError(string Id, string Message)
+        public IErrorHandler AddError(string Id, string Message)
         {
             StackTrace stackTrace = new StackTrace(true);
 
             Error error = new Error(Id, Message, stackTrace);
 
             Errors.Add(error);
+
+            return this;
         }
 
-        public void AddWarning(string Id, string Message)
+        public IErrorHandler AddWarning(string Id, string Message)
         {
             StackTrace stackTrace = new StackTrace(true);
 
             Error error = new Error(Id, Message, stackTrace);
 
             Warnings.Add(error);
+
+            return this;
         }
 
         public bool HasErrors()
@@ -48,20 +52,26 @@ namespace Fitz.Utilities
             return HasErrors() || HasWarnings();
         }
 
-        public void Clear()
+        public IErrorHandler Clear()
         {
             Errors.Clear();
             Warnings.Clear();
+
+            return this;
         }
 
-        public void ClearErrors()
+        public IErrorHandler ClearErrors()
         {
             Errors.Clear();
+
+            return this;
         }
 
-        public void ClearWarnings()
+        public IErrorHandler ClearWarnings()
         {
             Warnings.Clear();
+
+            return this;
         }
 
         public static IErrorHandler operator +(ErrorHandler Handler1, IErrorHandler Handler2)

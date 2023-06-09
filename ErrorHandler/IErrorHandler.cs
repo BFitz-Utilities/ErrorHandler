@@ -1,4 +1,4 @@
-namespace Fitz.Utilities
+﻿namespace Fitz.Utilities
 {
     public interface IErrorHandler
     {
@@ -10,9 +10,9 @@ namespace Fitz.Utilities
 
         #endregion Properties
 
-        public void AddError(string Id, string Message);
+        public IErrorHandler AddError(string Id, string Message);
 
-        public void AddWarning(string Id, string Message);
+        public IErrorHandler AddWarning(string Id, string Message);
 
         public bool HasErrors();
 
@@ -20,11 +20,11 @@ namespace Fitz.Utilities
 
         public bool HasAny();
 
-        public void Clear();
+        public IErrorHandler Clear();
 
-        public void ClearErrors();
+        public IErrorHandler ClearErrors();
 
-        public void ClearWarnings();
+        public IErrorHandler ClearWarnings();
 
     }
 }
