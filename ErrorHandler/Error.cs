@@ -26,4 +26,9 @@ namespace Fitz.Utilities
             return String.Format("Error: {0} | Message: {1} | Method: {2} | Line: {3} | File: {4}", Id, Message, _StackFrame?.GetMethod(), _StackFrame?.GetFileLineNumber(), _StackFrame?.GetFileName());
         }
     }
+
+    public class Warning : Error
+    {
+        public Warning(string id, string message, StackTrace stackTrace) : base(id, message, stackTrace) { }
+    }
 }
