@@ -2,7 +2,7 @@
 
 namespace Fitz.Utilities
 {
-    public class Error
+    public class Error : IError
     {
 
         public string Id { get; set; }
