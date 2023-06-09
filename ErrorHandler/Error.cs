@@ -10,7 +10,7 @@ namespace Fitz.Utilities
 
         public StackTrace StackTrace { get; set; }
 
-        private StackFrame? _StackFrame;
+        private readonly StackFrame? _StackFrame;
 
         public Error(string id, string message, StackTrace stackTrace)
         {
