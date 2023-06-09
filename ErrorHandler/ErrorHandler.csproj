@@ -12,8 +12,16 @@
     <RepositoryUrl>https://github.com/BFitz-Utilities/ErrorHandler.git</RepositoryUrl>
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <RootNamespace>Fitz.Utilities</RootNamespace>
     <AssemblyName>Fitz.Utilities.ErrorHandler</AssemblyName>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
