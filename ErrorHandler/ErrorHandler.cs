@@ -6,13 +6,13 @@ namespace Fitz.Utilities
     {
         public List<IError> Errors { get; }
 
-        public List<IError> Warnings { get; }
+        public List<IWarning> Warnings { get; }
 
         public ErrorHandler()
         {
             Errors = new List<IError>();
 
-            Warnings = new List<IError>();
+            Warnings = new List<IWarning>();
         }
 
         public IErrorHandler AddError(string Id, string Message)

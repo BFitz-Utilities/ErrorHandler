@@ -6,7 +6,7 @@
 
         List<IError> Errors { get; }
 
-        List<IError> Warnings { get; }
+        List<IWarning> Warnings { get; }
 
         #endregion Properties
 
