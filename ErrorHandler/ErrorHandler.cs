@@ -19,9 +19,7 @@ namespace Fitz.Utilities
         {
             StackTrace stackTrace = new StackTrace(true);
 
-            Error error = new Error(Id, Message, stackTrace);
-
-            Errors.Add(error);
+            Errors.Add(new Error(Id, Message, stackTrace));
 
             return this;
         }
@@ -30,9 +28,7 @@ namespace Fitz.Utilities
         {
             StackTrace stackTrace = new StackTrace(true);
 
-            Error error = new Error(Id, Message, stackTrace);
-
-            Warnings.Add(error);
+            Warnings.Add(new Warning(Id, Message, stackTrace));
 
             return this;
         }
