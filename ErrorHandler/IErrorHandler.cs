@@ -10,7 +10,11 @@
 
         #endregion Properties
 
+        public IErrorHandler AddError(string Message) => AddError(string.Empty, Message);
+
         public IErrorHandler AddError(string Id, string Message);
+
+        public IErrorHandler AddWarning(string Message) => AddWarning(string.Empty, Message);
 
         public IErrorHandler AddWarning(string Id, string Message);
 
