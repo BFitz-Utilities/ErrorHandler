@@ -16,6 +16,8 @@
     <RootNamespace>Fitz.Utilities</RootNamespace>
     <AssemblyName>Fitz.Utilities.ErrorHandler</AssemblyName>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <PackageLicenseUrl>https://licenses.nuget.org/MIT</PackageLicenseUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
